@@ -12,8 +12,8 @@ def check_bipartite_graph(n: int, edges: Dict[int, Set]) -> bool:
 
     Parameters:
         n (int) : number of vertices in the graph, vertices are enumerated from 0 to n-1
-        edges (Dict[int, Set]): adjacency dictionary which stores set of adjacent vertices for each vertex
+        edges (Dict[int, Set]): adjacency dictionary which stores a set of adjacent vertices for each vertex
     Returns:
-        bool: True or False if graph is bipartite or not
+        bool: True or False if a graph is bipartite or not
     """
 
