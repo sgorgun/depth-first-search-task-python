@@ -61,13 +61,14 @@ Expected result: True.
 ```mermaid
 graph TD;
     A((0)) ---- B((1));
+    B ---- H((6));
     B ---- C((2));
-    A ---- D((3));
     E((4));
     F((5));
-    F ---- D;
-    B ---- E;
+    F ---- D((3));
     C ---- E;
+    E ---- F;
+    H ---- F;
 ```
 
 Expected result: False.
@@ -76,14 +77,15 @@ Expected result: False.
 ```mermaid
 graph TD;
     A((0)) ---- B((1));
+    B ---- H((6));
     B ---- C((2));
-    A ---- D((3));
     E((4));
     F((5));
-    F ---- D;
+    F ---- D((3));
     C ---- E;
-    B ---- F;
     E ---- F;
+    H ---- I((7));
+    I ---- F;
 ```
 
 Expected result: True.
@@ -113,11 +115,13 @@ Expected result: 2
 graph TD;
     A((0)) --> B((1));
     B --> C((2));
-    A --> D((3));
+    D((3));
     E((4));
     F((5));
     F --> D;
     C --> F;
+    A --> H((5));
+    H --> D;
 ```
 
 Expected result: 4
@@ -127,12 +131,14 @@ Expected result: 4
 graph TD;
     A((0)) --> B((1));
     B --> C((2));
-    A --> D((3));
+    D((3));
     E((4));
     F((5));
     F --> D;
     C --> F;
     D --> E;
+    A --> H((5));
+    H --> D;
 ```
 
 Expected result: 5
