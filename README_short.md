@@ -10,6 +10,6 @@ The coding exercises are designed to test knowledge of the following concepts:
 ## Overview
 
 The coding exercises cover the following practical problems:
-* Checking if a (v, u)-path exist in a directed graph
+* Checking if a (v, u)-path exists in a directed graph
 * Checking if an undirected connected graph is bipartite
 * Finding the length of the longest eligible path in a directed acyclic graph

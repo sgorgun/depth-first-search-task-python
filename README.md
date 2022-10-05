@@ -10,13 +10,13 @@ The coding exercises are designed to test knowledge of the following concepts:
 ## Overview
 
 The coding exercises cover the following practical problems:
-* Checking if a (v, u)-path exist in a directed graph
+* Checking if a (v, u)-path exists in a directed graph
 * Checking if an undirected connected graph is bipartite
 * Finding the length of the longest eligible path in a directed acyclic graph
 
 ## Coding exercises
 
-### Exercise 1: Check if a (v, u)-path exist in a directed graph
+### Exercise 1: Check if a (v, u)-path exists in a directed graph
 
 Given the number of vertices `n`, graph edges (adjacency dictionary) `edges` and vertices `v` and `u` for a directed graph, implement the function below to check whether (v, u)-path exists or not. Vertices are enumerated from `0` to `n-1`.
 
