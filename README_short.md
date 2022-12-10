@@ -2,14 +2,14 @@
 
 ## Purpose
 
-The coding exercises are designed to test knowledge of the following concepts:
+The coding exercises are designed to test your knowledge of the following concepts:
 
-* The depth-first search traversal
-* Applying the depth-first search traversal in practice
+* DFS traversal
+* Applying DFS traversal in practice
 
 ## Overview
 
 The coding exercises cover the following practical problems:
-* Checking if a (v, u)-path exists in a directed graph
-* Checking if an undirected connected graph is bipartite
+* Checking to see if a (v, u)-path exists in a directed graph
+* Checking to see if an undirected connected graph is bipartite
 * Finding the length of the longest eligible path in a directed acyclic graph
