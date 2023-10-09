@@ -7,7 +7,7 @@ def find_the_longest_path_in_dag(n: int, edges: Dict[int, Set]) -> int:
     Returns the length of the longest path in a directed acyclic graph.
     Vertices are enumerated from 0 to N-1, where N is the number of vertices.
 
-    For example, you have a graph with five vertices from 0 to 5 and the edges {4: {3}, 3: {2}, 2: {1}, 1: {0}}.
+    For example, you have a graph with five vertices from 0 to 4 and the edges {4: {3}, 3: {2}, 2: {1}, 1: {0}}.
     The longest path is (4, 0)-path: 4 -> 3 -> 2 -> 1 -> 0. The expected result is 4.
 
     Parameters:

@@ -8,7 +8,7 @@ def check_path_existence(n: int, edges: Dict[int, Set], v: int, u: int) -> bool:
     Returns True/False depending on the existence of an eligible path from vertex v to vertex u in a directed graph.
     Vertices are enumerated from 0 to N-1, where N is the number of vertices.
 
-    For example, you have a graph with five vertices from 0 to 5 and the edges {1: {0, 3}, 0: {2}, 3: {4}}.
+    For example, you have a graph with five vertices from 0 to 4 and the edges {1: {0, 3}, 0: {2}, 3: {4}}.
     There is a path from vertex 1 to vertex 4: 1 -> 3 -> 4, so for v=1 and u=4, the function should return True.
     At the same time, no path exists from vertex 2 to vertex 0, so the expected result is False.
 

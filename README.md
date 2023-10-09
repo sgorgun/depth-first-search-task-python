@@ -26,7 +26,7 @@ def check_path_existence(n: int, edges: Dict[int, Set], v: int, u: int) -> bool:
     Returns True/False depending on the existence of an eligible path from vertex v to vertex u in a directed graph.
     Vertices are enumerated from 0 to N-1, where N is the number of vertices.
 
-    For example, you have a graph with five vertices from 0 to 5 and the edges {1: {0, 3}, 0: {2}, 3: {4}}.
+    For example, you have a graph with five vertices from 0 to 4 and the edges {1: {0, 3}, 0: {2}, 3: {4}}.
     There is a path from vertex 1 to vertex 4: 1 -> 3 -> 4, so for v=1 and u=4, the function should return True.
     At the same time, no path exists from vertex 2 to vertex 0, so the expected result is False.
 
@@ -84,7 +84,7 @@ def check_bipartite_graph(n: int, edges: Dict[int, Set]) -> bool:
     Returns True/False if a connected undirected graph is bipartite or not.
     Vertices are enumerated from 0 to N-1, where N is the number of vertices.
 
-    For example, you have a graph with five vertices from 0 to 5 and the edges {0: {1}, 1: {0, 2}, 2: {1, 3}, 3: {2, 4}, 4: {3}.
+    For example, you have a graph with five vertices from 0 to 4 and the edges {0: {1}, 1: {0, 2}, 2: {1, 3}, 3: {2, 4}, 4: {3}.
     This graph is bipartite because you can select two sets of vertices, {0, 2, 4} and {1, 3}, that don't have inner edges.
 
     Parameters:
@@ -157,7 +157,7 @@ def find_the_longest_path_in_dag(n: int, edges: Dict[int, Set]) -> int:
     Returns the length of the longest path in a directed acyclic graph.
     Vertices are enumerated from 0 to N-1, where N is the number of vertices.
 
-    For example, you have a graph with five vertices from 0 to 5 and the edges {4: {3}, 3: {2}, 2: {1}, 1: {0}}.
+    For example, you have a graph with five vertices from 0 to 4 and the edges {4: {3}, 3: {2}, 2: {1}, 1: {0}}.
     The longest path is (4, 0)-path: 4 -> 3 -> 2 -> 1 -> 0. The expected result is 4.
 
     Parameters:
