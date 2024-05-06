@@ -16,4 +16,19 @@ def check_bipartite_graph(n: int, edges: Dict[int, Set]) -> bool:
     Returns:
         bool: True or False if a graph is bipartite or not
     """
-    pass
+    color = [-1] * n
+
+    def dfs(node: int, c: int) -> bool:
+        color[node] = c
+        for neighbor in edges[node]:
+            if color[neighbor] == c:
+                return False
+            if color[neighbor] == -1 and not dfs(neighbor, 1 - c):
+                return False
+        return True
+
+    for node in range(n):
+        if color[node] == -1 and not dfs(node, 1):
+            return False
+
+    return True

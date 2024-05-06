@@ -20,4 +20,15 @@ def check_path_existence(n: int, edges: Dict[int, Set], v: int, u: int) -> bool:
     Returns:
         bool: True or False, depending on whether a (v,u)-path exists
     """
-    pass
+    visited = set()
+
+    def dfs(vertex: int) -> bool:
+        if vertex == u:
+            return True
+        visited.add(vertex)
+        for neighbor in edges.get(vertex, []):
+            if neighbor not in visited and dfs(neighbor):
+                return True
+        return False
+
+    return dfs(v)    
